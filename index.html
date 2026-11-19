@@ -1,0 +1,49 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="theme-color" content="#09080a" />
+  <title>Publica Affaires — Index</title>
+  <link rel="icon" href="assets/monogram.png" type="image/png" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header class="nav" aria-label="Navegación principal">
+    <div class="nav-left"><a href="#galeria">SERVICES</a><a href="community.html">COMMUNITY</a></div>
+    <a class="nav-center" href="#inicio" aria-label="Volver al inicio"><img src="assets/monogram.png" alt="PA" /></a>
+    <div class="nav-right"><a href="#" data-inactive="true">ABOUT</a><a href="#" data-inactive="true">INSTAGRAM</a></div>
+  </header>
+
+  <main>
+    <section class="hero" id="inicio" aria-label="Portada con luz interactiva">
+      <div class="hero-photo" id="heroPhoto" aria-hidden="true"></div>
+      <div class="hero-shade" aria-hidden="true"></div>
+      <img class="hero-logo" id="heroLogo" src="assets/logo.png" alt="Publica Affaires" />
+      <div class="cursor-word" id="cursorWord" aria-hidden="true">SCROLL</div>
+      <span class="hero-year">2026</span>
+    </section>
+
+    <section class="gallery-scroll" id="galeria" aria-label="Galería de proyectos">
+      <div class="gallery-sticky">
+        <div class="gallery-view" id="galleryView" aria-label="Sala expositiva 3D">
+          <div class="gallery-fallback" id="galleryFallback">
+            <a href="#" data-project="0"><img src="assets/origen.jpg" alt="El origen" /><span>El origen</span></a>
+            <a href="#" data-project="1"><img src="assets/liet.jpg" alt="Liet Launch" /><span>Liet Launch</span></a>
+            <a href="#" data-project="2"><img src="assets/sand.jpg" alt="Sand and Solace" /><span>Sand and Solace</span></a>
+            <a href="#" data-project="3"><img src="assets/dune.jpg" alt="Dune" /><span>Dune</span></a>
+          </div>
+        </div>
+        <div class="gallery-help">SCROLL TO ENTER <span>·</span> MOVE TO LOOK</div>
+        <div class="gallery-bottom">PUBLICA AFFAIRES <span>2026 — 04 WORKS</span></div>
+      </div>
+    </section>
+  </main>
+
+  <div class="project-modal" id="projectModal" role="dialog" aria-modal="true" aria-label="Fotografía ampliada" hidden>
+    <button class="modal-close" id="modalClose" aria-label="Cerrar">×</button>
+    <figure><img id="modalImage" alt="" /><figcaption id="modalCaption"></figcaption></figure>
+  </div>
+  <script src="script.js" type="module"></script>
+</body>
+</html>
